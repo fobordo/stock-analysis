@@ -25,15 +25,17 @@ Next, a nested for loop was written to loop through the stock performance data i
 
 #### Execution Times
 
-The execution time for the original script was approximately 0.309 seconds on 2017 data, and 0.297 seconds on 2018 data.
+The execution time for the original script was approximately 0.320 seconds on 2017 data, and 0.336 seconds on 2018 data.
 
-![Original Timer 2017](/Resources/Original_Timer_2017.png)           ![Original Timer 2018](/Resources/Original_Timer_2018.png)  
+![Original Timer 2017](/Resources/Original_Timer_2017.png)           
+![Original Timer 2018](/Resources/Original_Timer_2018.png)  
 
 #### Final Output
 
 The original script resulted in the following final outputs for 2017 and 2018 consecutively:
 
-![Original Results 2017](/Resources/Original_Results_2017.png)           ![Original Results 2018](/Resources/Original_Results_2018.png)
+![Original Results 2017](/Resources/Original_Results_2017.png)           
+![Original Results 2018](/Resources/Original_Results_2018.png)
 
 ### The Refactored Script
 
