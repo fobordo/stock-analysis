@@ -2,7 +2,7 @@
 
 ## Overview of Project
 
-The purpose of this analysis was to observe the [stock performance data](/blob/main/VBA_Challenge.xlsm) between 2017 and 2018 of various alternative energy companies. In this analysis, the total daily volumes and returns for 11 alternative energy companies, such as DAQO New Energy Corporation, were calculated in order to determine which companies performed best and would be most lucrative to invest in. We used Excel and VBA to perform the calculations in this analysis.
+The purpose of this analysis was to observe the [stock performance data](https://github.com/fobordo/stock-analysis/blob/main/VBA_Challenge.xlsm) between 2017 and 2018 of various alternative energy companies. In this analysis, the total daily volumes and returns for 11 alternative energy companies, such as DAQO New Energy Corporation, were calculated in order to determine which companies performed best and would be most lucrative to invest in. We used Excel and VBA to perform the calculations in this analysis.
 
 ## Results
 Using images and examples of your code, compare the stock performance between 2017 and 2018, as well as the execution times of the original script and the refactored script.
