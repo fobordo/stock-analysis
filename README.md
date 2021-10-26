@@ -23,6 +23,17 @@ Next, a nested for loop was written to loop through the stock performance data i
 
 ![Original For Loops](/Resources/Original_For_Loops.png)
 
+#### Formatting
+Formatting for the All Stocks Analysis sheet was also added to the original script (which stayed the same for the refactored script), including the following formats:
+1. Bold the text of the header row
+2. Add a bottom border to the header row
+3. Separates digits with commas and displays a trailing zero for the Total Daily Volume column
+4. Makes a single-digit percentage for the Return column
+5. Auto-fits the data in the Total Daily Volume column
+6. Conditionally formats the Return column by looping through the column and formatting the cell based on the sign of the value (green fill for positive or red fill for negative)
+
+![Original Formatting](/Resources/Original_Formatting.png)
+
 #### Execution Times
 
 The execution time for the original script was approximately 0.320 seconds on 2017 data, and 0.336 seconds on 2018 data.
@@ -55,17 +66,6 @@ The nested for loops from the original script were refactored to perform the sam
 An additional for loop was added outside of the nested for loops, which would output the results for daily volume, starting price, ending price, and return for all 11 companies by calling the variables stored inside of the new arrays.
 
 ![Refactored Output For Loop](/Resources/Refactored_Output_For_Loop.png)
-
-#### Formatting
-Formatting for the All Stocks Analysis sheet was also added to the refactored script, which involved the following formats:
-1. Bold the text of the header row
-2. Add a bottom border to the header row
-3. Separates digits with commas and displays a trailing zero for the Total Daily Volume column
-4. Makes a single-digit percentage for the Return column
-5. Auto-fits the data in the Total Daily Volume column
-6. Conditionally formats the Return column by looping through the column and formatting the cell based on the sign of the value (green fill for positive or red fill for negative)
-
-![Refactored Formatting](/Resources/Refactored_Formatting.png)
 
 #### Execution Times
 
