@@ -34,13 +34,6 @@ The original script also included formatting for the All Stocks Analysis sheet (
 
 ![Original Formatting](/Resources/Original_Formatting.png)
 
-#### Execution Times
-
-The execution time for the original script was approximately 0.320 seconds on 2017 data, and 0.336 seconds on 2018 data.
-
-![Original Timer 2017](/Resources/Original_Timer_2017.png)           
-![Original Timer 2018](/Resources/Original_Timer_2018.png)  
-
 #### Final Output
 
 The original script resulted in the following final outputs for 2017 and 2018 consecutively:
@@ -48,12 +41,19 @@ The original script resulted in the following final outputs for 2017 and 2018 co
 ![Original Outputs 2017](/Resources/Original_Outputs_2017.png)           
 ![Original Outputs 2018](/Resources/Original_Outputs_2018.png)
 
+#### Execution Times
+
+The execution time for the original script was approximately 0.320 seconds on 2017 data, and 0.336 seconds on 2018 data.
+
+![Original Timer 2017](/Resources/Original_Timer_2017.png)           
+![Original Timer 2018](/Resources/Original_Timer_2018.png)  
+
 ### The Refactored Script
 
-While the original script was able to calculate and output the desired stock performance data, it was refactored in order to reduce the execution time to run the code. Refactoring the script would be most beneficial in the scenario that hundredes of thousands of lines of data, or more than 11 companies, would need to be looped through. Similar to the original script, an array of all tickers was initialized. But instead of using a nested for loop to calculate and output the stock performance for each company individually, new arrays were initialized to store the calculations for the daily volume, starting price, ending price, and return of each company in its own variable.
+While the original script was able to calculate and output the desired stock performance data, it was refactored in order to reduce the execution time to run the code. Refactoring the script would be most beneficial in the scenario that hundredes of thousands of lines of data, or more than 11 tickers, would need to be looped through. Similar to the original script, an array of all tickers was initialized. But instead of using a nested for loop to calculate and output the stock performance for each ticker after each loop, new arrays were initialized to store the calculations for the daily volume, starting price, ending price, and return of each ticker in its own variable.
 
 #### New Variables and Arrays
-In the refactored script, a new variable was introduced called "tickerIndex." Instead of using "i" for the first for loop, tickerIndex would be used to indicate which ticker, or company, stock performance data was being calculated for. Three new arrays were also introduced, consisting of "tickerVolumes(12)", "tickerStartingPrices(12)", and "tickerEndingPrices(12)." These arrays would hold the calculated daily volume, starting price, ending price, and return for all 11 companies.
+In the refactored script, a new variable was introduced called "tickerIndex." Instead of using "i" for the first for loop, tickerIndex would be used to indicate which ticker stock performance data was being calculated for. Three new arrays were also introduced, consisting of "tickerVolumes(12)", "tickerStartingPrices(12)", and "tickerEndingPrices(12)." These arrays would hold the calculated daily volume, starting price, ending price, and return for all 11 tickers.
 
 ![Refactored Variables](/Resources/Refactored_Variables.png)
 
@@ -63,23 +63,32 @@ The nested for loops from the original script were refactored to perform the sam
 ![Refactored For Loops](/Resources/Refactored_For_Loops.png)
 
 #### Output For Loop
-An additional for loop was added outside of the nested for loops, which would output the results for daily volume, starting price, ending price, and return for all 11 companies by calling the variables stored inside of the new arrays.
+An additional for loop was added outside of the nested for loops, which would output the results for daily volume, starting price, ending price, and return for all 11 tickers by calling the variables stored inside of the new arrays.
 
 ![Refactored Output For Loop](/Resources/Refactored_Output_For_Loop.png)
 
+#### Formatting and Final Output
+The formatting code stayed the same in the refactored script, which resulted in the following final outputs for 2017 and 2018 consecutively:
+
+![Refactored Outputs 2017](/Resources/Refactored_Outputs_2017.png)
+![Refactored Outputs 2018](/Resources/Refactored_Outputs_2018.png)
+
+As seen in the screenshots above, the final outputs for the original script and refactored script were exactly the same. The only different output between the two scripts was the execution times to run the code.
+
 #### Execution Times
 
-The execution time for the refactored script was approximately 0.102 seconds on 2017 data, and 0.094 seconds on 2018 data, significantly faster than the original script.
+The execution time for the refactored script was approximately 0.102 seconds on 2017 data, and 0.094 seconds on 2018 data, approximately 0.2 seconds faster than the original script.
 
-![VBA Challenge 2017](/Resources/VBA_Challenge_2017.png)      ![VBA Challenge 2018](/Resources/VBA_Challenge_2018.png) 
+![VBA Challenge 2017](/Resources/VBA_Challenge_2017.png)
+![VBA Challenge 2018](/Resources/VBA_Challenge_2018.png) 
 
 ## Summary
-### What are the advantages or disadvantages of refactoring code?
-An advantage of refactoring code is that it improves the design of software, making it easier to maintain and manipulate. Any developer can easily go through and make modifications as the data you are analyzing changes. Other advantages include making the software easier to understand, easier to find bugs, and decreasing the time it takes to run the code.
+### The Advantages and Disadvantages of Refactoring Code
+The adventage of refactoring code is that it improves the design of the code structure, making it easier to maintain and manipulate. Any developer can easily go through and make modifications as the data they are analyzing changes or grows. Other advantages include making the code easier for future users to read, understand, and identify bugs. Refactoring code also decreases the time it takes to run the code because it takes fewer steps to perform the same functions, and uses less memory.
 
-While there are many advantages to refactoring code, some disadvantages exist too. A few disadvantages include running out of time in refactoring the code and inadvertantly introducing new bugs that didn't exist in the original code.
+While there are many advantages to refactoring code, some disadvantages exist too. A few disadvantages include running out of time in refactoring the code if there are time constraints on finishing a project, or inadvertantly introducing new bugs that didn't exist in the original code. Further, if the original code is already well written and runs efficiently, sometimes it may be non value-added to refactor the code if there are no plans to revisit or grow the project in the future.
 
-### How do these pros and cons apply to refactoring the original VBA script?
-These pros apply to refactoring the original VBA script in that if we obtained more data on the stock performance of more companies from different years, we could easily change the arrays and initialized tickers to accomodate the new data. We would not have to redesign the code structure, eliminating the chances of encountering new bugs. It would also be beneficial to have faster refactored code in the case that we must analyze hundreds of thousands of rows of data.
+### The Pros and Cons of Refactoring the Original VBA Script
+The pros of refactoring the original VBA script are that if we obtained more data on the stock performance of more tickers from different years, we could easily change the arrays and initialized tickers to accomodate the new data. We would not have to redesign the code structure, eliminating the chances of encountering new bugs. It would also be beneficial to have faster refactored code in the case that we must analyze hundreds of thousands of rows of data, decreasing the execution times to run the code and minimizing memory usuage.
 
-The cons apply to refactoring the original VBA script in that if this was a one-time project that would not be revisited in the future, which in this case it is, and it were for a big company, refactoring the original code that was working just fine would have been a waste of time and resources with little return. The difference in execution time was hardly noticeable since we were only analyzing 3000 rows and 11 different companies. While the faster refactored code would be beneficial for larger datasets, in this case, it was not significantly value-added to our project.
+The cons of refactoring the original VBA script are that if this was a one-time project that would not be revisited in the future, which in this case it is, and it were for a big company, refactoring the original code that was working just fine would have been a waste of time and resources with little return. The difference in execution times between the original and refactored VBA script, approximately 0.2 seconds, was hardly noticeable since we were only analyzing 3000 rows and 11 tickers. While the faster refactored code would be beneficial for larger datasets, in this case, it was not significantly value-added to our project.
