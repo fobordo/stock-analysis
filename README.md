@@ -2,10 +2,10 @@
 
 ## Overview of Project
 
-The purpose of this analysis was to observe the [stock performance data](https://github.com/fobordo/stock-analysis/blob/main/VBA_Challenge.xlsm) between 2017 and 2018 of various alternative energy companies. In this analysis, the total daily volumes and returns for 11 alternative energy companies, such as DAQO New Energy Corporation, were calculated in order to determine which companies performed best and would be most lucrative to invest in. We used Excel and VBA to perform the calculations in this analysis.
+The purpose of this analysis was to observe the [stock performance data](https://github.com/fobordo/stock-analysis/blob/main/VBA_Challenge.xlsm) between 2017 and 2018 of various alternative energy companies. In this analysis, the total daily volumes and returns for 11 alternative energy companies, such as DAQO New Energy Corporation, were calculated in order to determine which companies performed best and would be most lucrative to invest in. We used Excel and VBA to perform these calculations.
 
 ## Results
-Two different VBA scripts, the original and the refactored, were used to compare the stock performance betewen 2017 and 2018 of the 11 alternative companies. Both scripts prompt input from the user to indicate which year/worksheet, 2017 or 2018, they want to calculate the stock performance for. While both scripts resulted in the same stock performance outputs, the refactored script was able to run much faster than the original.
+Two different VBA scripts, the original and the refactored, were used to compare the stock performance betewen 2017 and 2018 of the 11 alternative energy companies. Both scripts prompt input from the user to indicate which year/worksheet, 2017 or 2018, they want to calculate the stock performance for. While both scripts resulted in the same stock performance outputs, the refactored script was able to run much faster than the original.
 
 ### The Original Script
 Originally, a longer VBA script was used to calculate and output the total daily volumes and returns of the 11 alternative energy companies. 
