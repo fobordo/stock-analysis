@@ -15,22 +15,22 @@ First, an array of all tickers was initialized, as seen in the screenshot below.
 
 ![Original Tickers Array](/Resources/Original_Tickers_Array.png)
 
-The tickers array had an index of 12 to represent the 11 alternative energy companies. 
+The tickers array was given an index of 12 to store the ticker symbols of all 11 alternative energy companies. 
 
 #### Nested For Loops
 
-Next, a nested for loop was written to loop through the stock performance data in the sheet of the specified year, calculate the total daily volume, starting price, ending price, and return for one ticker, or alternative energy company, then output the results for that one ticker onto the All Stocks Analysis sheet before looping through the data all over again for each consecutive ticker individually.
+Next, a nested for loop was written to loop through the stock performance data in the sheet of the specified year (2017 or 2018). After one loop, the script would calculate the total daily volume, starting price, ending price, and return for one ticker, then output the results for that ticker onto the All Stocks Analysis sheet before looping through the data all over again for each of the 11 tickers until the end of the for loop.
 
 ![Original For Loops](/Resources/Original_For_Loops.png)
 
 #### Formatting
-Formatting for the All Stocks Analysis sheet was also added to the original script (which stayed the same for the refactored script), including the following formats:
+The original script also included formatting for the All Stocks Analysis sheet (which stayed the same for the refactored script), including the following formats:
 1. Bold the text of the header row
 2. Add a bottom border to the header row
 3. Separates digits with commas and displays a trailing zero for the Total Daily Volume column
 4. Makes a single-digit percentage for the Return column
 5. Auto-fits the data in the Total Daily Volume column
-6. Conditionally formats the Return column by looping through the column and formatting the cell based on the sign of the value (green fill for positive or red fill for negative)
+6. Conditional formatting for the Return column. A for loop loops through the column and formats the cell based on the sign of the value (green fill for positive or red fill for negative)
 
 ![Original Formatting](/Resources/Original_Formatting.png)
 
