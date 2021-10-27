@@ -45,8 +45,8 @@ The execution time for the original script was approximately 0.320 seconds on 20
 
 The original script resulted in the following final outputs for 2017 and 2018 consecutively:
 
-![Original Results 2017](/Resources/Original_Results_2017.png)           
-![Original Results 2018](/Resources/Original_Results_2018.png)
+![Original Outputs 2017](/Resources/Original_Outputs_2017.png)           
+![Original Outputs 2018](/Resources/Original_Outputs_2018.png)
 
 ### The Refactored Script
 
